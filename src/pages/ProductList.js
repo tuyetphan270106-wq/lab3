@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import { products } from "../datas/products"
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import Pagination from '../components/Pagination';
-import { Button, Card, Col, Container, Row, Table } from 'react-bootstrap';
+import { Button, Container, Table } from 'react-bootstrap';
 import SearchBar from '../components/SearchBar';
 function ProductList() {
     const navigate = useNavigate();
@@ -68,6 +68,7 @@ function ProductList() {
                 {/* Hiển thị danh sách */}
                 {displayDishes.length === 0 ? (
                     <p className="text-muted text-center my-4">Không tìm thấy sản phẩm phù hợp.</p>
+                ) : (
                     <Table>
                         <thead>
                             <tr>

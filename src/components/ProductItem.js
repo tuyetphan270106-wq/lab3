@@ -19,20 +19,20 @@ function ProductItem() {
             <button onClick={() => navigate("/products")}>Quay lại danh sách</button>
             <Row>
                 <Col>
-                    <img src="/images/elaicheesecake.jpg" alt={product.name} style={{ maxWidth: '100%', borderRadius: '8px' }} />
+                    <img src="/images/elaicheesecake.jpg" alt="Ảnh banner" />
                 </Col>
                 <Col>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        alignItems: 'flex-start'
+                        alignItems: 'center'
                     }}>
 
 
                         <h1>{product.name}</h1>
-                        <h3>ID: {product.id}</h3>
-                        <h4>Danh mục: {product.category}</h4>
-                        <h4 className="text-danger">Giá: {product.price?.toLocaleString('vi-VN')} đ</h4>
+                        <h2>ID: {product.id}</h2>
+                        <h2>Danh mục: {product.category}</h2>
+                        <h2>Giá: {product.price}</h2>
 
                         <p>----------------------------------------------------</p>
                         <h2>Mô tả: {product.description}</h2>
