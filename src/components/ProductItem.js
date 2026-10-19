@@ -25,17 +25,17 @@ function ProductItem() {
                     <div style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        alignItems: 'center'
+
                     }}>
 
 
-                        <h1>{product.name}</h1>
-                        <h2>ID: {product.id}</h2>
-                        <h2>Danh mục: {product.category}</h2>
-                        <h2>Giá: {product.price}</h2>
+                        <h2>{product.name}</h2>
+                        <h3>ID: {product.id}</h3>
+                        <h3>Danh mục: {product.category}</h3>
+                        <h3>Giá: {product.price}</h3>
 
-                        <p>----------------------------------------------------</p>
-                        <h2>Mô tả: {product.description}</h2>
+                        <p>---------------------------------------------------------------------------</p>
+                        <h3>Mô tả: {product.description}</h3>
 
 
 
