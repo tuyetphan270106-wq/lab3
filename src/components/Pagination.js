@@ -7,6 +7,7 @@ function Pagination({ currentPage, totalPage, onPageChange }) {
 
     return (
         <div className="d-flex align-items-center justify-content-center gap-2 mt-4">
+            <h4>Tổng: {totalPage} Trang </h4>
             {/* Nút Trước */}
             <Button
                 variant="secondary"

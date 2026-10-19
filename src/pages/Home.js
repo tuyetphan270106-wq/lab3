@@ -7,9 +7,11 @@ function Home() {
     return (
         <div>
             <Header />
-            <h1>Welcome to ProductStore</h1>
-            <p>Manage and explore products for your needs</p>
-            <button onClick={() => navigate("/products")}>View products</button>
+            <div className='flex flex-col items-center justify-center text-center'>
+                <h1>Welcome to ProductStore</h1>
+                <p>Manage and explore products for your needs</p>
+                <button onClick={() => navigate("/products")}>View products</button>
+            </div>
         </div>
     )
 }

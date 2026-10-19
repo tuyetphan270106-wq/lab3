@@ -18,10 +18,10 @@ function ProductItem() {
         <div>
             <button onClick={() => navigate("/products")}>Quay lại danh sách</button>
             <Row>
-                <Col>
+                <Col className='mt-5'>
                     <img src="/images/elaicheesecake.jpg" alt="Ảnh banner" />
                 </Col>
-                <Col>
+                <Col className='mt-5'>
                     <div style={{
                         display: 'flex',
                         flexDirection: 'column',
